@@ -9,7 +9,7 @@ export default function MyOrder() {
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'));
         try {
-            const response = await axios.get("http://localhost:5000/order/myOrderData", {
+            const response = await axios.get("https://food-delivery-website-black.vercel.app/order/myOrderData", {
                 params: { email: localStorage.getItem('userEmail') }, // Pass email in query
                 headers: { 'Content-Type': 'application/json' },
             });
