@@ -9,7 +9,7 @@ const { OrderRouter } = require("./routes/orderData");
 
 // Use CORS middleware for proper configuration
 app.use(cors({
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "https://food-delivery-website-5fn5.vercel.app", // Frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     credentials: true, // Allow cookies if needed
 }));
