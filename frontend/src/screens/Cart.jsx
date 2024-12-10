@@ -6,6 +6,7 @@ import axios from 'axios';
 export default function Cart() {
     let data = useCart();
     let dispatch = useDispatchCart();
+    axios.defaults.withCredentials = true;
 
     if (data.length === 0) {
         return (
