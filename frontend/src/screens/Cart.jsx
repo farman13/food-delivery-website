@@ -20,7 +20,7 @@ export default function Cart() {
         let userEmail = localStorage.getItem("userEmail");
         console.log(data, localStorage.getItem("userEmail"), new Date())
         const response = await axios.post(
-            "http://localhost:5000/order/orderData",
+            "https://food-delivery-website-black.vercel.app/order/orderData",
             {
                 order_data: data,
                 email: userEmail,
