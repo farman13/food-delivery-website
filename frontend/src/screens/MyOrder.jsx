@@ -5,6 +5,7 @@ import axios from 'axios';
 
 export default function MyOrder() {
     const [orderData, setOrderData] = useState(null);
+    axios.defaults.withCredentials = true;
 
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'));
