@@ -11,7 +11,7 @@ function Home() {
     const [search, setSearch] = useState('');
 
     async function loadData() {
-        const response = await axios.get("http://localhost:5000/data/fooddata", {
+        const response = await axios.get("https://food-delivery-website-black.vercel.app/data/fooddata", {
             headers: {
                 'Content-Type': 'application/json',
             },
