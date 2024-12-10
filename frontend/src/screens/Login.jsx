@@ -6,7 +6,8 @@ import Navbar from "../components/Navbar";
 function Login() {
     const [credentials, setCredentials] = useState({ email: "", password: "" })
     const navigate = useNavigate();
-
+    axios.defaults.withCredentials = true;
+    
     async function handleSubmit(e) {
         e.preventDefault();
 
