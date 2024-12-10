@@ -9,7 +9,8 @@ function Home() {
     const [foodItem, setfoodItem] = useState([]);
     const [foodCategory, setfoodCategory] = useState([]);
     const [search, setSearch] = useState('');
-
+axios.defaults.withCredentials = true;
+    
     async function loadData() {
         const response = await axios.get("https://food-delivery-website-black.vercel.app/data/fooddata", {
             headers: {
