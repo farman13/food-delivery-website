@@ -12,7 +12,7 @@ function Signup() {
 
         try {
             const response = await axios.post(
-                "http://localhost:5000/user/signup",
+                "https://food-delivery-website-black.vercel.app/user/signup",
                 {
                     name: credentials.name,
                     email: credentials.email,
